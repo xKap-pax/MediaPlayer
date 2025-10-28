@@ -2,13 +2,26 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
+        private bool isPlaying = false;
         public MainPage()
         {
-            InitializeComponent();
+            
+             InitializeComponent();
+        }
+        private void OnPlayPauseClicked(object sender, EventArgs e)
+        {
+            isPlaying = !isPlaying;
+            
+            (sender as Button).Text = isPlaying ? "⏸" : "⏯";
         }
 
-      
+        private void OnPrevClicked(object sender, EventArgs e)
+        {
+        }
+
+        private void OnNextClicked(object sender, EventArgs e)
+        {
+        }
+
     }
 }
