@@ -4,9 +4,8 @@
              x:Class="MediaPlayer.MainPage">
     <ContentPage.Background>
         <LinearGradientBrush EndPoint="1,1">
-            
+
             <GradientStop Color="#111017" Offset="0.2" />
-  
             <GradientStop Color="#452146" Offset="0.9"/>
         </LinearGradientBrush>
     </ContentPage.Background>
@@ -29,7 +28,7 @@
                 <RoundRectangle CornerRadius="20" />
             </Border.StrokeShape>
             <VerticalStackLayout>
-                <Image x:Name="AlbumArt" Source="default_album.png" Aspect="AspectFill" HeightRequest="250" WidthRequest="250" />
+                <Image x:Name="AlbumCover" Source="white.png" Aspect="AspectFill" HeightRequest="250" WidthRequest="250" />
                 <Label  x:Name="TrackTitle" Text="Track Title" FontSize="22" TextColor="White" HorizontalOptions="Center" />
                 <Label  x:Name="ArtistName" Text="Artist Name" FontSize="16" TextColor="Gray" HorizontalOptions="Center" />
             </VerticalStackLayout>
