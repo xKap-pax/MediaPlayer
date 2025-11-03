@@ -22,6 +22,9 @@
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="20" />
             </Border.StrokeShape>
+            <HorizontalStackLayout  FlowDirection="RightToLeft">
+                <Button Clicked="OpenSongListClicked" Text="Tak" TextColor="Wheat"/>
+            </HorizontalStackLayout>
         </Border>
         <Border Grid.Row="1" HeightRequest="502" WidthRequest="380" BackgroundColor="#010101" Opacity="0.41" Stroke="Transparent">
             <Border.StrokeShape>

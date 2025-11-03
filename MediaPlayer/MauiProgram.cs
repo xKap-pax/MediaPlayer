@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Core;
+using Microsoft.Extensions.Logging;
 
 namespace MediaPlayer
 {
@@ -7,8 +9,10 @@ namespace MediaPlayer
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+            builder.UseMauiApp<App>().UseMauiCommunityToolkitCore();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

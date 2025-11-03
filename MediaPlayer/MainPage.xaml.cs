@@ -18,7 +18,10 @@
         private void OnPrevClicked(object sender, EventArgs e)
         {
         }
+        private void OpenSongListClicked(object sender, EventArgs e)
+        {
 
+        }
         private void OnNextClicked(object sender, EventArgs e)
         {
         }
